@@ -62,6 +62,9 @@ LABEL org.label-schema.build-date=${BUILD_DATE} \
     authors="Dave Conway-Jones, Nick O'Leary, James Thomas, Raymond Mouthaan"
 
 COPY --from=build /usr/src/node-red/prod_node_modules ./node_modules
+COPY ./settings.js /data/settings.js
+COPY ./assets/tekos-logo.png /data/assets/
+COPY ./server.js /data/
 
 # Chown, install devtools & Clean up
 RUN chown -R node-red:node-red /usr/src/node-red && \
@@ -88,3 +91,4 @@ EXPOSE 1880
 HEALTHCHECK CMD curl http://localhost:1880/ || exit 1
 
 ENTRYPOINT ["npm", "start", "--", "--userDir", "/data"]
+CMD ["node", "/data/server.js"]
