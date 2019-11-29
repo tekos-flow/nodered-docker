@@ -27,7 +27,8 @@
         }
     ],
     "dependencies": {
-        "node-red": "1.0.3"
+        "node-red": "1.0.3",
+        "node-red-contrib-tekosbot" : "0.0.28"
     },
     "engines": {
         "node": ">=10"
