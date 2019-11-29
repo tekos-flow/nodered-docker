@@ -277,17 +277,17 @@ module.exports = {
         page: {
             title: "Tekos Flow",
            // favicon: null, //homeDir+"/.node-red/assets/tekos-logo.png",
-            favicon: "/home/nodered/.node-red/assets/tekos-logo.png",
+            favicon: "/data/tekos-logo.png",
             // css: "/home/nodered/.node-red/assets/theme.css"
         },
         header: {
             title: " Tekos Flow",
-            image: "/home/nodered/.node-red/assets/tekos-logo.png", // or null to remove image
+            image: "/data/assets/tekos-logo.png", // or null to remove image
           // image: null  //homeDir+"/.node-red/assets/tekos-logo.png", // or null to remove image
         },
 
         login: {
-            image: "/home/nodered/.node-red/assets/tekos-logo.png",
+            image: "/data/assets/tekos-logo.png",
           //  image: null // "/data/assets/tekos-logo.png", // a 256x256 image
         },
         
